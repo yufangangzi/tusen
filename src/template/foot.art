@@ -1,0 +1,20 @@
+<div class="footer clearfix mt30">
+  <div class="foot-search wrap-1372-min">
+    <div class="wrap">
+     <a href="/zhanting" class="btn-search">查询</a>
+    </div>
+  </div>
+  
+  <div class="footer_two">
+    <div class="waps">
+      <div class="footer_two_left">
+        <b class="backTop"></b>
+        <p class="f16">地址：浙江省绍兴市嵊州市浦口街道浦慧路1号</p>
+        <p class="f16">电话：400-001-4888</p>
+      </div>
+      <div class="footer_two_right">版权Copyright©2017归图森木业有限公司所有    ICP备案： <a href="http://www.miibeian.gov.cn">浙ICP备08015615号-3</a>  <img src="http://idinfo.zjaic.gov.cn/images/i_lo2.gif" border="0" style="width:20px; height:20px; ">
+        浙公网安备 33068302000415号
+      </div>
+    </div> 
+  </div>
+</div>

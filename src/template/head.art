@@ -1,0 +1,15 @@
+<div class="head">
+	<div class="wrap-1500">
+		<a href="/" class="logo"></a>
+		<ul class="nav-list">
+      {{each list}}
+        {{if $index===0}}
+          <li class="hover"><a href="/">{{$value.name}}</a></li>
+        {{else}}
+          <li class=""><a href="/">{{$value.name}}</a></li>
+        {{/if}}
+      {{/each}}
+		</ul>
+    <div class="nav-line" style=""></div>                                                              
+	</div>
+</div>

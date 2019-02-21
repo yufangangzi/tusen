@@ -1,0 +1,12 @@
+<div class='scroll index-banner'>
+  <ul>
+    {{each list}}
+      <li>
+        <a href='#'>
+          <img src={{$value.img}} >
+        </a>
+      </li>
+    {{/each}}
+    
+  </ul>
+</div>
