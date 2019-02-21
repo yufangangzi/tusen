@@ -6,7 +6,7 @@
         {{if $index===0}}
           <li class="hover"><a href="/">{{$value.name}}</a></li>
         {{else}}
-          <li class=""><a href="/">{{$value.name}}</a></li>
+          <li class=""><a href="/map.html">{{$value.name}}</a></li>
         {{/if}}
       {{/each}}
 		</ul>
