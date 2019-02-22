@@ -47,14 +47,6 @@ module.exports = {
           {loader: 'css-loader'},
           {loader: 'less-loader'}
         ]
-        // use: extractLESS.extract({
-        //   fallback: 'style-loader',
-        //   use: [
-        //     {loader: 'css-loader'},
-        //     {loader: 'less-loader'}
-        //   ]
-        //   // use: ['css-loader', 'less-loader']
-        // })
       },
       {
         test: /\.css$/,

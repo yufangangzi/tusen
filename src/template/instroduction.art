@@ -1,0 +1,22 @@
+<div class="introduction about_bg">
+  <div class="about">
+    <div class="show_top clearfix">
+        <div class="show_top_l wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                <h2 class="show_top_l_h2">关于图森</h2>
+                <p class="show_top_l_p">ABOUT US</p>
+        </div>
+        <a href="/tusen" class="about_top_but wow fadeInRight" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInRight;"><span></span></a>
+    </div>
+    <div class="about_bot clearfix" data-wow-delay="0.5s">
+      <div class="about_bot_l wow fadeInLeft" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+            图森木业有限公司源起于巴贝集团与绿城房地产集团的项目合作，目前已是一家集研发、设计、生产、销售、服务为一体的专业性整体木作企业。
+公司成立于2008年，注册资本一亿元，总投资五亿元。更重要的是，品牌“图森整体木作”
+在高端装修领域，拥有行业内超强产品结构研发、色彩美学和技术深化、
+工程服务的团队，着力提供高端木作的全套服务。
+      </div>
+      <div class="about_bot_r wow " style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInRight;">
+        <a href="/tusen"><img src="./1464859181633.png"></a>
+      </div>
+    </div>
+  </div>
+</div>
