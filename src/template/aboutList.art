@@ -5,7 +5,26 @@
       <div class="t2">各大系列风格满足您的选择</div>
     </div>
     <div class='wrap_list'>
-      
+      <ul>
+        <li>
+          <a  class='about_list list_0'></a>
+        </li>
+        <li>
+          <a  class='about_list list_1'></a>
+        </li>
+        <li>
+          <a  class='about_list list_2'></a>
+        </li>
+        <li>
+          <a  class='about_list list_3'></a>
+        </li>
+        <li>
+          <a  class='about_list list_4'></a>
+        </li>
+        <li>
+          <a  class='about_list list_5'></a>
+        </li>
+      </ul>
     </div>
   </div>
 </div>

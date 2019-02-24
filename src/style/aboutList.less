@@ -44,5 +44,47 @@
   .wrap_list{
     margin: 0 auto;
     width: 1200px;
+    display: flex;
+    justify-content: center;
+    ul{
+      display: inline-block;
+      margin: 0 auto;
+      li:hover{
+        background-color: red;
+        .about_list{
+          background-image: url('../images/product_icon_h.png')
+        }
+      }
+      li{
+        display: inline-block;
+        .about_list{
+          display: inline-block;
+          width:80px;
+          height: 80px;
+          margin:20px;
+          background-image: url('../images/product_icon.png');
+          background-repeat: no-repeat;
+          cursor: pointer;
+        }
+        .list_0{
+          background-position-y: 0;
+        }
+        .list_1{
+          background-position-y: -80px;
+        }
+        .list_2{
+          background-position-y: -160px;
+        }
+        .list_3{
+          background-position-y: -240px;
+        }
+        .list_4{
+          background-position-y: -320px;
+        }
+        .list_5{
+          background-position-y: -400px;
+        }
+      }
+    }
   }
 }
