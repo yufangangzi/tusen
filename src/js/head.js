@@ -1,13 +1,10 @@
 import '../style/head.less'
 let head = require('../template/head.art')
 const list = [
-  {name:'首页'},
-  {name:'品牌介绍'},
-  {name:'展厅鉴赏'},
-  {name:'案例赏析'},
-  {name:'设计大咖'},
-  {name:'新闻资讯'},
-  {name:'联络信息'},
+  {name:'首页',href: '/'},
+  {name:'品牌介绍',href: '/'},
+  {name:'案例赏析',href: '/'},
+  {name:'联络信息',href: '/map.html'},
 ]
 document.getElementById('head').innerHTML  = head({list: list})
 !function() {

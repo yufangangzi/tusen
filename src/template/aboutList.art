@@ -6,25 +6,35 @@
     </div>
     <div class='wrap_list'>
       <ul>
-        <li>
-          <a  class='about_list list_0'></a>
-        </li>
-        <li>
-          <a  class='about_list list_1'></a>
-        </li>
-        <li>
-          <a  class='about_list list_2'></a>
-        </li>
-        <li>
-          <a  class='about_list list_3'></a>
-        </li>
-        <li>
-          <a  class='about_list list_4'></a>
-        </li>
-        <li>
-          <a  class='about_list list_5'></a>
-        </li>
+        {{each list}}
+          {{if $index===0}}
+            <li class='select'>
+          {{else}}
+            <li>
+          {{/if}}  
+            <a  class='about_list {{$value.classname}}'></a>
+            <p>{{$value.dir}}</p>
+          </li>
+        {{/each}}
       </ul>
     </div>
+  </div>
+  <div class='pro-nav-img'>
+    <ul>
+      {{each list}}
+        {{if $index===0}}
+          <li class='select'>
+        {{else}}
+          <li>
+        {{/if}}
+            <div class='li-bg {{$value.imgsrc}}'></div>
+            <div class='pro-nav-text'>
+              <div class='t1'>{{$value.info.t1}}</div>
+              <div class="t2">{{$value.info.t21}}<br>{{$value.info.t22}}</div>
+              <span class="t3">{{$value.info.t3}}</span>            
+            </div>
+        </li>
+      {{/each}}
+    </ul>
   </div>
 </div>

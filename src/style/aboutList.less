@@ -46,22 +46,29 @@
     width: 1200px;
     display: flex;
     justify-content: center;
+    padding-bottom: 20px;
     ul{
       display: inline-block;
       margin: 0 auto;
-      li:hover{
-        background-color: red;
+      li.select{
+        background-color: #764f48;
+        color: #764f48;
         .about_list{
           background-image: url('../images/product_icon_h.png')
         }
       }
       li{
         display: inline-block;
+        color: #999;
+        font-size:14px;
+        p{
+          text-align: center;
+        }
         .about_list{
           display: inline-block;
           width:80px;
           height: 80px;
-          margin:20px;
+          margin:20px 20px 5px;
           background-image: url('../images/product_icon.png');
           background-repeat: no-repeat;
           cursor: pointer;
@@ -85,6 +92,96 @@
           background-position-y: -400px;
         }
       }
+    }
+  }
+  .pro-nav-img{
+    height: 540px;
+    position: relative;
+    li.select{
+      opacity: 1;
+      z-index: 2;
+    }
+    li:hover{
+      .li-bg{
+        transform: scale(1.2);
+      }
+      .t3{
+        border: 1px solid #764f48!important;
+        background-color: #764f48
+      }
+    }
+    li{
+      background-position: center center;
+      height: 540px;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      cursor: pointer;
+      overflow: hidden;
+      opacity: 0;
+      z-index: 1;
+      transition: opacity 2s;
+      .li-bg1{
+        background-image: url('../images/pro_nav_1.jpg');
+      }
+      .li-bg2{
+        background-image: url('../images/pro_nav_2.jpg');
+      }
+      .li-bg3{
+        background-image: url('../images/pro_nav_3.jpg');
+      }
+      .li-bg4{
+        background-image: url('../images/pro_nav_4.jpg');
+      }
+      .li-bg5{
+        background-image: url('../images/pro_nav_5.jpg');
+      }
+      .li-bg6{
+        background-image: url('../images/pro_nav_6.jpg');
+      }
+      .li-bg{
+        background-position: center center;
+        height: 540px;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        cursor: pointer;
+        transition: all 1s
+      }
+      
+      .pro-nav-text {
+        position: absolute;
+        top: 160px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color: #fff;
+        z-index: 12;
+        .t1 {
+          font-size: 36px;
+          padding-bottom: 27px;
+        }
+        .t2 {
+          font-size: 16px;
+          line-height: 26px;
+        }
+        .t3 {
+          display: inline-block;
+          width: 168px;
+          height: 46px;
+          border: 1px solid #fff;
+          line-height: 46px;
+          font-size: 14px;
+          margin-top: 33px;
+        }
+      }
+      
     }
   }
 }
