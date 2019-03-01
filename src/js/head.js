@@ -2,7 +2,7 @@ import '../style/head.less'
 let head = require('../template/head.art')
 const list = [
   {name:'首页',href: '/'},
-  {name:'品牌介绍',href: '/'},
+  {name:'品牌介绍',href: '/brand.html'},
   {name:'案例赏析',href: '/'},
   {name:'联络信息',href: '/map.html'},
 ]

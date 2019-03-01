@@ -15,7 +15,8 @@ module.exports = {
   mode: 'development',
   entry: {
     app: './src/index.js',
-    map: './src/map.js'
+    map: './src/map.js',
+    brand: './src/brand.js'
   }, // 入口文件
   output: {
     filename: '[name].[hash].js',
@@ -87,6 +88,15 @@ module.exports = {
       filename: 'map.html',
       template: './src/map.html',
       chunks: ['map'],
+      minify: {
+        removeComments: true
+      },
+      hash: true
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'brand.html',
+      template: './src/brand.html',
+      chunks: ['brand'],
       minify: {
         removeComments: true
       },
