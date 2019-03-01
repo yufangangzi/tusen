@@ -14,12 +14,13 @@ module.exports = merge(webpackDevConfig, {
       uglifyOptions: {
         mangle: true,
         output: {
-            beautify: true,
+            beautify: false,
         },
       }
     }),
     new extractTextPlugin({
       filename: './style/[name].css'
     })
-  ]
+  ],
+  
 })

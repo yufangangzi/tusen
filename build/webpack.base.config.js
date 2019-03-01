@@ -82,12 +82,12 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: './src/index.html',
-      chunks: ['app']
+      chunks: ['app','common']
     }),
     new HtmlWebpackPlugin({
       filename: 'map.html',
       template: './src/map.html',
-      chunks: ['map'],
+      chunks: ['map','common'],
       minify: {
         removeComments: true
       },
@@ -96,14 +96,26 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'brand.html',
       template: './src/brand.html',
-      chunks: ['brand'],
+      chunks: ['brand','common'],
       minify: {
         removeComments: true
       },
       hash: true
     }),
+    
     extractCSS,
     extractLESS
   ], // 插件
+  optimization: {
+    splitChunks: {
+        cacheGroups: {
+            lib1: {
+                chunks: "initial",
+                name: "common",
+                enforce: true
+            }
+        }
+    }
+  },
   resolve: {}, //为引入的模块起别名
 }
