@@ -27,6 +27,15 @@ document.getElementById('head').innerHTML  = head({list: list})
           "left" : curP,
           "width" : curW
         });
+        const winhei = $(window).height()
+        $(window).scroll(function(event){
+          var winPos = $(window).scrollTop();
+          if (winhei > winPos) {
+            $('.head').removeClass('headScroll')
+          } else {
+            $('.head').addClass('headScroll')
+          }
+        });
       }
       function nav() {
         var $targetEle = $(".nav-list>li:not('.last')"),
