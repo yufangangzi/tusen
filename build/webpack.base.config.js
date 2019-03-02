@@ -115,7 +115,9 @@ module.exports = {
       },
       hash: true
     }),
-    
+    new MiniCssExtractPlugin({
+      filename: './style/[name].css'
+    })
     // extractCSS,
     // extractLESS
   ], // 插件

@@ -18,9 +18,7 @@ module.exports = merge(webpackDevConfig, {
         },
       }
     }),
-    new extractTextPlugin({
-      filename: './style/[name].css'
-    })
+    
   ],
   
 })

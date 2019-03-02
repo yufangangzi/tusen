@@ -54,25 +54,34 @@
   }
   .about_time{
 		.track-rcol {
-			width: 100%;
+      width: 100%;
+      .track_title{
+        font-size: 38px;
+        color: #000;
+        line-height: 100%;
+        padding: 60px 0 45px;
+        text-align: center;
+      }
 		}
-		
 		.track-list {
-			margin: 20px;
-			padding-left: 5px;
-			position: relative;
+			padding: 50px 0  50px;;
+      position: relative;
+      background-color: #f2f2f2;
+      ul{
+        overflow: hidden;
+      }
 		}
 		
 		.track-list li {
       position: relative;
       width:50%;
-			padding: 9px 0 0 25px;
 			line-height: 18px;
-			border-left: 1px solid #d9d9d9;
-			color: #999;
+      color: #999;
+      padding-bottom: 30px;
 		}
 		.track-list li:nth-of-type(odd){
       left:50%;
+      border-left: 1px solid #d9d9d9;
       .node-icon{
         left: -15px;
       }
@@ -82,11 +91,12 @@
     }
 		.track-list li:nth-of-type(even){
       text-align: right;
+      border-right: 1px solid #d9d9d9;
       .node-icon{
-        right: 11px;
+        right: -15px;
       }
       .txt{
-        right:85px;
+        right:45px;
       }
     }
 		.track-list li .node-icon {
@@ -102,14 +112,29 @@
 			position: relative;
 			top: 4px;
 			display: inline-block;
-			vertical-align: middle;
+      vertical-align: middle;
+      font-size: 32px;
+      color: #000;
+      font-weight: 600;
 		}
 		
 		.track-list li .txt {
 			position: relative;
 			top: 4px;
 			display: inline-block;
-			vertical-align: middle;
+      vertical-align: middle;
+      .txt_dir{
+        background: #fff;
+        box-shadow: 0 4px 20px #ccc;
+        padding: 15px 20px 20px;
+        color: #333;
+        position: relative;
+        margin-top: 25px;
+        p{
+          font-size: 14px;
+          line-height: 26px
+        }
+      }
 		}
 		
 		.track-list li.first .time {
