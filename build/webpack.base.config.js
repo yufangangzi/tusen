@@ -7,7 +7,8 @@ module.exports = {
   entry: {
     app: './src/index.js',
     map: './src/map.js',
-    brand: './src/brand.js'
+    brand: './src/brand.js',
+    admire: './src/admire.js'
   }, // 入口文件
   output: {
     filename: '[name].[hash].js',
@@ -70,6 +71,15 @@ module.exports = {
       filename: 'brand.html',
       template: './src/brand.html',
       chunks: ['brand','common'],
+      minify: {
+        removeComments: true
+      },
+      hash: true
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'admire.html',
+      template: './src/admire.html',
+      chunks: ['admire','common'],
       minify: {
         removeComments: true
       },
