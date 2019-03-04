@@ -1,16 +1,7 @@
 const path = require('path')
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const extractCSS = new ExtractTextPlugin({
-  disable: process.env.NOOE_ENV === 'development' ? true : false,
-  filename: 'style/[name].css'
-})
-
-const extractLESS = new ExtractTextPlugin({
-  filename: 'style/[name].less'
-})
 module.exports = {
   mode: 'development',
   entry: {
@@ -39,37 +30,6 @@ module.exports = {
         use: {
           loader: 'art-template-loader',
         }
-      },
-      
-      {
-        test: /\.less$/,
-        // use: extractLESS.extract({
-        //   fallback: 'style-loader',
-        //   use: [
-        //     {loader: 'css-loader'},
-        //     {loader: 'less-loader'}
-        //   ]
-        // })
-        use: [
-          //{loader: 'style-loader'},
-          {loader: MiniCssExtractPlugin.loader},
-          {loader: 'css-loader'},
-          {loader: 'less-loader'}
-        ]
-      },
-      {
-        test: /\.css$/,
-        use: [
-          //{loader: 'style-loader'},
-          {loader: MiniCssExtractPlugin.loader},
-          {loader: 'css-loader'}
-        ]
-        // 从右到左， loader安装后无需引入可直接使用
-        // use: ['style-loader', 'css-loader']
-        // use: extractCSS.extract({
-        //   fallback: 'style-loader',
-        //   use: 'css-loader'
-        // })
       },
       {
         test: /\.(png|jpe?g|gif)$/,
@@ -115,22 +75,6 @@ module.exports = {
       },
       hash: true
     }),
-    new MiniCssExtractPlugin({
-      filename: './style/[name].css'
-    })
-    // extractCSS,
-    // extractLESS
-  ], // 插件
-  // optimization: {
-  //   splitChunks: {
-  //       cacheGroups: {
-  //           lib1: {
-  //               chunks: "initial",
-  //               name: "common",
-  //               enforce: true
-  //           }
-  //       }
-  //   }
-  // },
+  ], 
   resolve: {}, //为引入的模块起别名
 }
