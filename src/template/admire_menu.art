@@ -1,7 +1,7 @@
 <ul>
   {{each list}}
     <li>
-      <a href="/admire.html{{$value.maodian}}">
+      <a name="{{$value.maodian}}" >
         <i class="iconfont {{$value.fontcss}}"></i>
         <h5>{{$value.fontdir}}</h5>
       </a>

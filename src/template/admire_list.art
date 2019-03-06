@@ -1,7 +1,7 @@
 <ul class='list_imgs'>
 {{each list}}
   <li>
-    <a href="">
+    <a>
       <div class="imgs">
         <img src="{{$value.imgrul}}" alt="">
       </div>
@@ -10,5 +10,11 @@
 {{/each}}
 </ul>
 <div class='fenye'>
-  <a href="/jianou" class="thisclass">1</a>
+  {{each pageList}}
+    {{if $index === 0}}
+    <a  class="thisclass" name="{{$index}}">{{$index + 1}}</a>
+    {{else}}
+    <a  name="{{$index}}">{{$index + 1}}</a>
+    {{/if}}
+  {{/each}}
 </div>

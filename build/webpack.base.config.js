@@ -56,12 +56,15 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: './src/index.html',
-      chunks: ['app','common']
+      chunks: ['app','common'],
+      cache: true,
+      meta: {keywords:'图森'}
     }),
     new HtmlWebpackPlugin({
       filename: 'map.html',
       template: './src/map.html',
       chunks: ['map','common'],
+      cache: true,
       minify: {
         removeComments: true
       },
@@ -71,6 +74,7 @@ module.exports = {
       filename: 'brand.html',
       template: './src/brand.html',
       chunks: ['brand','common'],
+      cache: true,
       minify: {
         removeComments: true
       },
@@ -80,6 +84,7 @@ module.exports = {
       filename: 'admire.html',
       template: './src/admire.html',
       chunks: ['admire','common'],
+      cache: true,
       minify: {
         removeComments: true
       },
