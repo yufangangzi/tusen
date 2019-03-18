@@ -5,6 +5,7 @@ const merge = require('webpack-merge');
 const uglify = require('uglifyjs-webpack-plugin')
 const extractTextPlugin = require('mini-css-extract-plugin')
 const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 module.exports = merge(webpackDevConfig, {
   mode: 'production',
   module: {
@@ -45,7 +46,8 @@ module.exports = merge(webpackDevConfig, {
       cssProcessorOptions:{
         safe: true
       }
-    })
+    }),
+    // new BundleAnalyzerPlugin()
   ],
   optimization: {
     splitChunks: {
