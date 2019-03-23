@@ -20,21 +20,23 @@
     </div>
   </div>
   <div class='pro-nav-img'>
-    <ul>
-      {{each list}}
-        {{if $index===0}}
-          <li class='select'>
-        {{else}}
-          <li>
-        {{/if}}
-            <div class='li-bg {{$value.imgsrc}}'></div>
-            <div class='pro-nav-text'>
-              <div class='t1'>{{$value.info.t1}}</div>
-              <div class="t2">{{$value.info.t21}}<br>{{$value.info.t22}}</div>
-              <span class="t3">{{$value.info.t3}}</span>            
-            </div>
-        </li>
-      {{/each}}
-    </ul>
+    <a class='pro-href' href="/admire.html">
+      <ul>
+        {{each list}}
+          {{if $index===0}}
+            <li class='select'>
+          {{else}}
+            <li>
+          {{/if}}
+              <div class='li-bg {{$value.imgsrc}}'></div>
+              <div class='pro-nav-text'>
+                <div class='t1'>{{$value.info.t1}}</div>
+                <div class="t2">{{$value.info.t21}}<br>{{$value.info.t22}}</div>
+                <span class="t3">{{$value.info.t3}}</span>            
+              </div>
+          </li>
+        {{/each}}
+      </ul>
+    </a>
   </div>
 </div>
