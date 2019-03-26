@@ -1,7 +1,7 @@
 <ul class='list_imgs'>
 {{each list}}
   <li>
-    <a>
+    <a href="/detail.html">
       <div class="imgs">
         <img src="{{$value.imgrul}}" alt="">
       </div>

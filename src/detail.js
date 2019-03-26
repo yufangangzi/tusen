@@ -1,5 +1,5 @@
 import './style/base.css'
 import './style/index.css'
-// import './style/instroduction.less'
+import './style/detail.less'
 require('./js/head.js')
 require('./js/foot.js')

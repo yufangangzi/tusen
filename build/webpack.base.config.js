@@ -8,7 +8,8 @@ module.exports = {
     app: './src/index.js',
     map: './src/map.js',
     brand: './src/brand.js',
-    admire: './src/admire.js'
+    admire: './src/admire.js',
+    detail: './src/detail.js'
   }, // 入口文件
   output: {
     filename: '[name].[hash].js',
