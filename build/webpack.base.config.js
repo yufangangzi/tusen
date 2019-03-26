@@ -90,6 +90,16 @@ module.exports = {
       },
       hash: true
     }),
+    new HtmlWebpackPlugin({
+      filename: 'detail.html',
+      template: './src/detail.html',
+      chunks: ['detail','common'],
+      cache: true,
+      minify: {
+        removeComments: true
+      },
+      hash: true
+    }),
   ], 
   resolve: {}, //为引入的模块起别名
 }
