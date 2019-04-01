@@ -1,9 +1,18 @@
 <ul class='list_imgs'>
 {{each list}}
   <li>
-    <a>
+    <a href="/detail.html">
       <div class="imgs">
         <img src="{{$value.imgrul}}" alt="">
+      </div>
+      <div class="txt">
+        <div>
+          <h5>厦门国际广场</h5>
+          <div class="tubiao">
+            <img src="/cp-more.png" alt="厦门国际广场">
+          </div>
+          <div class="more">MORE</div>
+        </div>
       </div>
     </a>
   </li>

@@ -8,7 +8,8 @@ module.exports = {
     app: './src/index.js',
     map: './src/map.js',
     brand: './src/brand.js',
-    admire: './src/admire.js'
+    admire: './src/admire.js',
+    detail: './src/detail.js'
   }, // 入口文件
   output: {
     filename: '[name].[hash].js',
@@ -84,6 +85,16 @@ module.exports = {
       filename: 'admire.html',
       template: './src/admire.html',
       chunks: ['admire','common'],
+      cache: true,
+      minify: {
+        removeComments: true
+      },
+      hash: true
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'detail.html',
+      template: './src/detail.html',
+      chunks: ['detail','common'],
       cache: true,
       minify: {
         removeComments: true
