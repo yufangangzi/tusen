@@ -5,7 +5,8 @@ import Scrolls from './scroll.js'
 const list = [
   {img:'./banner.jpg'},
   {img:'./banner01.jpg'},
-  {img:'./banner987.jpg'},
+  {img:'./banner02.jpg'},
+  {img:'./banner03.jpg'},
 ]
 document.getElementById('banner').innerHTML  = scroll({list: list})
 const scrolls = new Scrolls('.index-banner')
