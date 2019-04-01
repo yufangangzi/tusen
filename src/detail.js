@@ -3,3 +3,4 @@ import './style/index.css'
 import './style/detail.less'
 require('./js/head.js')
 require('./js/foot.js')
+require('./js/detail.js')
