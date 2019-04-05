@@ -47,12 +47,17 @@ SquareOverlay.prototype.hide = function(){
   }    
 }
 var map = new BMap.Map("container"); 
+// 设置具体位置经纬度
 var point = new BMap.Point(116.726232,39.862082);
 map.centerAndZoom(point, 15);
 var mySquare = new SquareOverlay(map.getCenter(),102, 'red')
 console.log(map.getCenter())
 map.addOverlay(mySquare)
 map.setMapStyle({style:'dark'})
+
+// 右上角添加缩放控件
+var top_right_navigation = new BMap.NavigationControl({anchor: BMAP_ANCHOR_TOP_RIGHT});
+map.addControl(top_right_navigation); 
 // var opts = {    
 //   width : 250,     // 信息窗口宽度    
 //   height: 100,     // 信息窗口高度    
