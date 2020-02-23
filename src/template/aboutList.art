@@ -20,7 +20,7 @@
     </div>
   </div>
   <div class='pro-nav-img'>
-    <a class='pro-href' href="/admire.html">
+    <a class='pro-href'>
       <ul>
         {{each list}}
           {{if $index===0}}
@@ -28,12 +28,14 @@
           {{else}}
             <li>
           {{/if}}
+              <a href="/admire.html?topic={{$value.dir}}">
               <div class='li-bg {{$value.imgsrc}}'></div>
               <div class='pro-nav-text'>
                 <div class='t1'>{{$value.info.t1}}</div>
                 <div class="t2">{{$value.info.t21}}<br>{{$value.info.t22}}</div>
                 <span class="t3">{{$value.info.t3}}</span>            
               </div>
+              </a>
           </li>
         {{/each}}
       </ul>

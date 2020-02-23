@@ -51,7 +51,7 @@ var map = new BMap.Map("container");
 var point = new BMap.Point(116.726232,39.862082);
 map.centerAndZoom(point, 15);
 var mySquare = new SquareOverlay(map.getCenter(),102, 'red')
-console.log(map.getCenter())
+// console.log(map.getCenter())
 map.addOverlay(mySquare)
 map.setMapStyle({style:'dark'})
 

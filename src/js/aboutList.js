@@ -14,5 +14,4 @@ $('.wrap_list li').bind('mouseenter',function (e) {
   $(this).addClass('select')
   const index = $(this).index()
   $('.pro-nav-img').find('li').eq(index).addClass('select').siblings().removeClass('select')
-  console.log()
 })

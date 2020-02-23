@@ -1,3 +1,4 @@
+<div class='t1'>{{topic}}案例</div>
 <ul class='list_imgs'>
 {{each list}}
   <li>
@@ -20,7 +21,7 @@
 </ul>
 <div class='fenye'>
   {{each pageList}}
-    {{if $index === 0}}
+    {{if $index === currentPage}}
     <a  class="thisclass" name="{{$index}}">{{$index + 1}}</a>
     {{else}}
     <a  name="{{$index}}">{{$index + 1}}</a>

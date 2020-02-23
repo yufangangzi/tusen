@@ -6,7 +6,7 @@ const list = [
   {name:'案例赏析',href: '/admire.html'},
   {name:'联络信息',href: '/map.html'},
 ]
-document.getElementById('head').innerHTML  = head({list: list})
+document.getElementById('head').innerHTML  = head({list: list, pathName: window.location.pathname})
 !function() {
   let hanli = function() {
     var self = this;
@@ -21,8 +21,6 @@ document.getElementById('head').innerHTML  = head({list: list})
         var $liCur = $(".nav-list>li.hover"),
         curP = $liCur.offset().left + self.offset,
         curW = $liCur.outerWidth(true) - self.offset*2;
-          self.curP = curP;
-          self.curW = curW;
         $slider.css({
           "left" : curP,
           "width" : curW
@@ -52,6 +50,13 @@ document.getElementById('head').innerHTML  = head({list: list})
             "width" : _width
           }, "fast");
         });
+        // $targetEle.click(function () {
+        //   var $_parent = $(this),//.parent(),
+        //   _width = $_parent.outerWidth(true) - self.offset*2,
+        //   posL = $_parent.offset().left + self.offset;
+        //   $navBox.curP = posL
+        //   $navBox.curW = _width
+        // });
         $navBox.mouseleave(function (cur, wid) {
           
           cur = self.curP;
