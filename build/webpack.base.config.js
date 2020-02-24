@@ -59,7 +59,7 @@ module.exports = {
       template: './src/index.html',
       chunks: ['app','common'],
       cache: true,
-      meta: {keywords:'锦泊豪斯'}
+      meta: {keywords:'锦泊豪斯,私人定制,家具'}
     }),
     new HtmlWebpackPlugin({
       filename: 'map.html',
